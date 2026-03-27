@@ -5,7 +5,7 @@ import Portfolio from "./Portfolio";
 
 function App() {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-12 flex flex-col gap-14 w-full">
+    <div className="max-w-4xl mx-auto px-6 py-12 flex flex-col gap-14 w-full">
       {/* Hero */}
       <div className="flex flex-col gap-5">
         <div className="text-left">
@@ -66,14 +66,13 @@ function App() {
           startDate={new Date(2022, 5, 13)}
           endDate={new Date(2025, 3, 1)}
           location="Toronto, Ontario · Remote"
+          logo="https://aisle.sh/img/new-logo.png"
         >
-          <ul className="text-left flex flex-col gap-2 text-sm text-white/75">
+          <ul className="text-left flex flex-col gap-2 text-white/75">
             <li>
-              Architected{" "}
-              <a href="https://aisle.sh/">AI workflow automation platform</a>{" "}
-              using React, Phoenix and Rails to democratize ML pipeline
-              creation, featuring visual node-based builders, and conversational
-              AI interface with OpenAI/Anthropic integration
+              Created <a href="https://aisle.sh/">aisle.sh</a>, an AI powered B2B SaaS
+              using React, Phoenix, and PostgreSQL todemocratize ML pipeline creation, 
+              featuring visual node-based builders, and contextual LLM chat with OpenAI/Anthropic integration
             </li>
             <li>
               Constructed sophisticated data tables for{" "}
@@ -102,9 +101,9 @@ function App() {
               high-traffic endpoints cutting database load by 25%
             </li>
             <li>
-              Engineered a comprehensive{" "}
+              Engineered the frontend of a comprehensive{" "}
               <a href="https://www.datajoint.com/">
-                scientific workflow platform
+                scientific workflow platform (DataJoint)
               </a>{" "}
               using React Flow with custom edges/nodes, layered visualization,
               and interactive data tables, cutting data processing time by
@@ -129,13 +128,13 @@ function App() {
         <Experience
           company="Scotiabank"
           link="https://www.scotiabank.com/global/en/global-site.html"
-          position="Software Developer"
+          position="Frontend Developer"
           startDate={new Date(2021, 5, 1)}
           endDate={new Date(2022, 6, 1)}
           logo="https://cdn.brandfetch.io/idpIpGPfn2/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1668074697674"
           location="Toronto, Ontario · Remote"
         >
-          <ul className="text-left flex flex-col gap-2 text-sm text-white/75">
+          <ul className="text-left flex flex-col gap-2 text-white/75">
             <li>
               Rebuilt the user interface of a high-traffic customer onboarding
               and servicing platform using TypeScript React, and SASS improving
@@ -161,13 +160,13 @@ function App() {
         <Experience
           company="BGIS"
           link="https://www.bgis.com/"
-          position="Software Developer Intern"
+          position="Fullstack Developer Intern"
           startDate={new Date(2019, 4, 1)}
           logo="https://cdn.brandfetch.io/idkLZ4PKzz/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1751942826058"
           endDate={new Date(2019, 11, 1)}
           location="Markham, Ontario · On-Site"
         >
-          <ul className="text-left flex flex-col gap-2 text-sm text-white/75">
+          <ul className="text-left flex flex-col gap-2 text-white/75">
             <li>
               Worked with cross-functional teams in an Agile environment to
               create a facility management platform in .NET
@@ -197,7 +196,7 @@ function App() {
           <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center shrink-0">
             <img
               src="https://cdn.brandfetch.io/idO4kMl-Ux/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1749652021642"
-              className="h-11 w-11 object-contain"
+              className="h-10 w-10 object-contain"
             />
           </div>
           <div className="flex flex-col text-left gap-0.5">
@@ -205,7 +204,7 @@ function App() {
               University of Ontario Institute of Technology
             </a>
             <span className="text-white/60">
-              Honours BSc in Computer Science Co-op
+              Honours: Bachelors of Science (BSc) in <span className="text-white opacity-90">Computer Science Co-op</span>
             </span>
           </div>
         </div>
