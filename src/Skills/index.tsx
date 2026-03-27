@@ -1,18 +1,21 @@
 import type {Category } from "../types"
 
 export default function Skills({ name, category }: { name: string, category: Category }) {
-  const categoryClasses = {
-    frontend: 'bg-blue-500',
-    backend: 'bg-green-600',
-    database: 'bg-red-500',
-    language: 'bg-[#2d9da7]',
-    testing: 'bg-[#7a2246]',
-    other: 'bg-[#6d6858]'
+  const categoryText: Record<string, string> = {
+    frontend: '#7eb8d4',
+    backend:  '#7ec8a0',
+    language: '#b39ddb',
+    database: '#e8a0a0',
+    testing:  '#d4b896',
+    other:    '#999999',
   }
 
   return (
-    <div className={`${categoryClasses[category]} py-1 px-1.5 grow rounded-md max-w-fit`}>
-      <span className="text-white">{name}</span>
+    <div
+      className="bg-[#1a1a1a] border border-[#2a2a2a] py-0.5 px-2.5 rounded max-w-fit text-sm"
+      style={{ color: categoryText[category] }}
+    >
+      {name}
     </div>
   )
 }
