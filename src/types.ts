@@ -1,1 +1,1 @@
-export type Category = 'frontend' | 'backend' | 'database' | 'language' | 'testing' | 'other'
+export type Category = 'frontend' | 'backend' | 'database' | 'language' | 'testing' | 'ai' | 'other'

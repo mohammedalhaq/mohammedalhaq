@@ -6,6 +6,7 @@ const categoryColor: Record<Category, string> = {
   language: "#b39ddb",
   database: "#e8a0a0",
   testing:  "#d4b896",
+  ai:       "#a8d5b5",
   other:    "#888888",
 };
 

@@ -26,10 +26,11 @@ const navItems = [
 const skillGroups: { label: string; category: Category; skills: string[] }[] = [
   { label: "Frontend", category: "frontend", skills: ["React", "Next.js", "React Native", "Tailwind CSS", "Node.JS", "CSS", "SASS"] },
   { label: "Language", category: "language", skills: ["TypeScript", "JavaScript", "Ruby", "Python", "C#"] },
-  { label: "Backend", category: "backend", skills: ["Ruby on Rails", "GraphQL", "Node.js", "Express.js", "REST API"] },
+  { label: "Backend", category: "backend", skills: ["Ruby on Rails", "Node.js", "Express.js", "REST API", "GraphQL"] },
   { label: "Database", category: "database", skills: ["PostgreSQL", "AWS S3", "Oracle"] },
-  { label: "Testing", category: "testing", skills: ["Playwright", "RSpec", "Jest", "Mirage.js"] },
-  { label: "Other", category: "other", skills: ["OpenAI API", "Anthropic API", "Accessibility"] },
+  { label: "Testing", category: "testing", skills: ["Playwright", "RSpec", "Jest", "Mirage.js", "React Testing Library"] },
+  { label: "AI", category: "ai", skills: ["OpenAI API", "Anthropic API", "OpenRouter", "Claude Code"] },
+  { label: "Other", category: "other", skills: ["Accessibility (WCAG)", "Bilingual - English and French"] },
 ];
 
 function SectionHeading({ children }: { children: string }) {
@@ -60,7 +61,7 @@ function App() {
 
           {/* Bio */}
           <p className="text-white/70 text-[15px] leading-relaxed">
-            I'm a Toronto based software engineer with 4.5+ years of building responsive
+            I'm a Toronto based software engineer with 5 years of experience building responsive
             applications using React, TypeScript, and Ruby on Rails. Solving interesting
             problems from building AI tooling to help automate workflows, to optimizing
             high-traffic APIs for financial platforms.
@@ -118,23 +119,24 @@ function App() {
           >
             <ul className="text-left flex flex-col gap-2 text-white/75">
               <li>
-                Created <a href="https://aisle.sh/">aisle.sh</a>, an AI powered B2B SaaS
-                using React, Phoenix, and PostgreSQL to democratize ML pipeline creation,
-                featuring visual node-based builders, and contextual LLM chat with OpenAI/Anthropic integration
+                Developed core features for <a href="https://aisle.sh/">aisle.sh</a>, a B2B SaaS enabling
+                non-technical teams to build and deploy LLM-driven workflows. Contributed from research through
+                MVP across the full stack in React, Phoenix, and PostgreSQL
               </li>
               <li>
-                Constructed sophisticated data tables for{" "}
-                <a href="https://addepar.com/wealth-management">
-                  Addepar's portfolio management platform
-                </a>{" "}
-                with advanced pagination and filtering, allowing 100+ financial
-                advisors to efficiently align multimillion-dollar portfolios to targets
+                Designed multi-provider AI integration supporting OpenAI and Anthropic, visual node-based
+                workflow builder, prompt playground, and collaborative chat with system prompting and conversation forking
               </li>
               <li>
-                Leveraged Next.js server-side rendering and TypeScript to create a
-                high-performance portfolio rebalancing tool with advanced visualization
-                capabilities, reducing analysis time and improving decision-making for
-                financial advisors
+                Built <a href="https://addepar.com/wealth-management">Addepar's portfolio management platform</a>{" "}
+                in React and Next.js with real-time calculation engines for on-demand rebalancing
+                across accounts and portfolios, reducing analysis time and improving decision-making
+                for financial advisors
+              </li>
+              <li>
+                Constructed sophisticated data tables with server-side pagination and
+                virtualized rendering to handle large datasets, enabling 100+ advisors
+                to efficiently align multimillion-dollar portfolios to targets
               </li>
               <li>
                 Engineered an advanced search functionality for{" "}
@@ -182,9 +184,23 @@ function App() {
           >
             <ul className="text-left flex flex-col gap-2 text-white/75">
               <li>
-                Rebuilt the user interface of a high-traffic customer onboarding and
-                servicing platform using TypeScript React, and SASS improving system
-                reliability and reducing response times by over 30%
+                Delivered the total user interface overhaul of a high-traffic client onboarding
+                and servicing platform using React with Typescript, Next.js, and SASS improving
+                system reliability and reducing response times by over 30%
+              </li>
+              <li>
+                Implemented comprehensive WCAG 2.2 accessibility compliance including keyboard
+                navigation, screen reader optimization, and inclusive design patterns serving
+                customers with disabilities
+              </li>
+              <li>
+                Prioritized a unified, responsive, bilingual interface supporting both English
+                and French banking workflows with consistent cross-device styling ensuring
+                a cohesive user experience
+              </li>
+              <li>
+                Led technical demonstrations to external teams and drove agile process improvements,
+                accelerating testing cycles and boosting team delivery efficiency by 25%
               </li>
               <li>
                 Implemented comprehensive WCAG 2.2 accessibility compliance including
