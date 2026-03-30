@@ -152,7 +152,7 @@ export default function Experience({
                 : "0px",
           }}
         >
-          <div className="pt-4 pl-[60px] test-[15rem]">{children}</div>
+          <div className="pt-4 pl-[60px] text-[15px]">{children}</div>
         </div>
       </div>
     </div>
