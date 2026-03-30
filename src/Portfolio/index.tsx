@@ -31,48 +31,71 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      {projects.map((project) => (
-        <a
-          key={project.title}
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group rounded-lg bg-[#1a1a1a] border border-[#2a2a2a] p-5 flex flex-col gap-3 hover:border-[#3a3a3a] transition-colors !text-white/87 no-underline"
-        >
-          <div className="flex items-start justify-between gap-2">
-            <h3 className="font-semibold text-white text-left leading-snug">
-              {project.title}
-            </h3>
-            <svg
-              className="shrink-0 w-4 h-4 opacity-40 group-hover:opacity-80 transition-opacity mt-0.5"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M7 17L17 7" />
-              <path d="M7 7h10v10" />
-            </svg>
-          </div>
-          <p className="text-sm text-white/60 text-left flex-1 leading-relaxed">
-            {project.description}
-          </p>
-          <div className="flex flex-wrap gap-1.5">
-            {project.tech.map((t) => (
-              <span
-                key={t}
-                className="text-xs px-2 py-0.5 rounded-full bg-white/10 text-white/70"
+    <div className="flex flex-col gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {projects.map((project) => (
+          <a
+            key={project.title}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group rounded-xl bg-[#0f0f12] border border-[#1c1c22] p-5 flex flex-col gap-3 hover:border-[#2a2a35] hover:bg-[#111116] transition-all duration-200 !text-white no-underline"
+          >
+            <div className="flex items-start justify-between gap-2">
+              <h3 className="font-semibold text-white/90 text-[15px] text-left leading-snug">
+                {project.title}
+              </h3>
+              <svg
+                className="shrink-0 w-3.5 h-3.5 opacity-25 group-hover:opacity-60 transition-opacity mt-0.5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                {t}
-              </span>
-            ))}
-          </div>
-        </a>
-      ))}
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </div>
+            <p className="text-[13px] text-white/65 text-left flex-1 leading-relaxed">
+              {project.description}
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {project.tech.map((t) => (
+                <span
+                  key={t}
+                  className="text-xs px-2 py-0.5 rounded-full bg-white/[0.06] text-white/50 border border-white/[0.06]"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </a>
+        ))}
+      </div>
+      <a
+        href="https://github.com/mohammedalhaq"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex items-center justify-center gap-2 py-3 rounded-xl border border-[#1c1c22] text-white/40 text-[13px] hover:text-white/70 hover:border-[#2a2a35] transition-all duration-200 no-underline"
+      >
+        View more work
+        <svg
+          className="w-3.5 h-3.5 opacity-60 group-hover:translate-x-0.5 transition-transform"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M5 12h14" />
+          <path d="M12 5l7 7-7 7" />
+        </svg>
+      </a>
     </div>
   );
 }

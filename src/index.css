@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
   text-rendering: optimizeLegibility;
@@ -12,44 +12,52 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   font-weight: 500;
-  color: #8ab4f8;
-  text-decoration: inherit;
+  color: #93c5fd;
+  text-decoration: none;
+  transition: color 0.15s;
 }
 
 a:hover {
-  color: #aecbfa;
+  color: #bfdbfe;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #111111;
+  background-color: #080810;
+  background-image:
+    radial-gradient(ellipse 90% 55% at 50% -5%, rgba(109, 92, 255, 0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 35% at 95% 105%, rgba(56, 120, 255, 0.13) 0%, transparent 60%);
 }
 
 button {
   border-radius: 6px;
-  border: 1px solid #2d2d2d;
-  padding: 0.5em 1.1em;
-  font-size: 0.9em;
+  border: 1px solid #27272a;
+  padding: 0.4em 1em;
+  font-size: 0.875em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1e1e1e;
-  color: rgba(255, 255, 255, 0.75);
+  background-color: #18181b;
+  color: rgba(255, 255, 255, 0.65);
   cursor: pointer;
-  transition: border-color 0.15s, background-color 0.15s;
+  transition: border-color 0.15s, background-color 0.15s, color 0.15s;
 }
 
 button:hover {
-  border-color: #444;
-  background-color: #252525;
+  border-color: #3f3f46;
+  background-color: #1f1f23;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
