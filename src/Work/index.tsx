@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 
-const projects = [
+const allProjects = [
   {
     title: "AI Workflow Automation",
     description:
@@ -29,13 +29,58 @@ const projects = [
     tech: ["Next.js", "TypeScript", "GraphQL"],
     link: "https://addepar.com/wealth-management",
   },
+  {
+    title: "Client Onboarding Platform",
+    description:
+      "Full UI overhaul of a high-traffic banking platform with bilingual support and WCAG 2.2 accessibility compliance, improving response times by 30%.",
+    tech: ["React", "Next.js", "TypeScript", "SASS"],
+    link: "https://www.scotiabank.com/",
+  },
+  {
+    title: "Facility Management Platform",
+    description:
+      "Cross-functional facility management system built in an Agile environment; led migration from a legacy ASP Classic project to Angular 8.",
+    tech: ["Angular", ".NET", "TypeScript"],
+    link: "https://www.bgis.com/",
+  },
 ];
 
-export default function Portfolio() {
+export default function Work() {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="max-w-[860px] mx-auto px-6 pt-14 pb-24">
+      <div className="mb-10">
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 text-white/40 hover:text-white/70 text-[13px] transition-colors no-underline !text-white/40 hover:!text-white/70 mb-8"
+        >
+          <svg
+            className="w-3.5 h-3.5"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M19 12H5" />
+            <path d="M12 19l-7-7 7-7" />
+          </svg>
+          Back
+        </Link>
+        <div className="flex items-center gap-3 mt-8 mb-2">
+          <span className="w-5 h-px bg-blue-400/50 shrink-0" />
+          <h2 className="text-xs font-bold uppercase tracking-[0.12em] text-blue-400/70">
+            All Work
+          </h2>
+        </div>
+        <h1 className="text-[23px] font-bold text-white leading-tight tracking-tight">
+          Projects & Contributions
+        </h1>
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {projects.map((project) => (
+        {allProjects.map((project) => (
           <a
             key={project.title}
             href={project.link}
@@ -77,25 +122,6 @@ export default function Portfolio() {
           </a>
         ))}
       </div>
-      <Link
-        to="/work"
-        className="group flex items-center justify-center gap-2 py-3 rounded-xl border border-[#1c1c22] !text-white/40 text-[13px] hover:!text-white/70 hover:border-[#2a2a35] transition-all duration-200 no-underline"
-      >
-        View more work
-        <svg
-          className="w-3.5 h-3.5 opacity-60 group-hover:translate-x-0.5 transition-transform"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M5 12h14" />
-          <path d="M12 5l7 7-7 7" />
-        </svg>
-      </Link>
     </div>
   );
 }
