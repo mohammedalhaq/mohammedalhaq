@@ -2,28 +2,28 @@ import { Link } from "@tanstack/react-router";
 
 const projects = [
   {
-    title: "AI Workflow Automation",
+    title: "Aisle.sh",
     description:
       "Visual node-based ML pipeline builder with a conversational AI interface. Features OpenAI/Anthropic integration and a real-time collaborative canvas.",
     tech: ["React", "Phoenix", "Ruby on Rails", "OpenAI", "Anthropic"],
     link: "https://aisle.sh/",
   },
   {
-    title: "Scientific Workflow Platform",
+    title: "DataJoint",
     description:
       "React Flow-based platform with custom nodes, layered visualization, and interactive data tables — cutting processing time by 80–90% for research teams.",
     tech: ["React", "React Flow", "TypeScript", "PostgreSQL"],
     link: "https://www.datajoint.com/",
   },
   {
-    title: "Nasdaq DataLink Search",
+    title: "Nasdaq DataLink",
     description:
       "Advanced search with predictive text, smart filters, and relevance scoring — reducing average search time from minutes to seconds for analysts.",
     tech: ["React", "TypeScript", "Ruby on Rails"],
     link: "https://data.nasdaq.com/",
   },
   {
-    title: "Portfolio Rebalancing Tool",
+    title: "Addepar",
     description:
       "High-performance Next.js tool with advanced data tables and visualization, helping 100+ financial advisors align multimillion-dollar portfolios.",
     tech: ["Next.js", "TypeScript", "GraphQL"],

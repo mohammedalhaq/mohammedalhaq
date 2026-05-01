@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 
 const allProjects = [
   {
-    title: "AI Workflow Automation",
+    title: "Aisle.sh",
     description:
       "Visual node-based ML pipeline builder with a conversational AI interface. Features OpenAI/Anthropic integration and a real-time collaborative canvas.",
     tech: ["React", "Phoenix", "Ruby on Rails", "OpenAI", "Anthropic"],
@@ -23,21 +23,21 @@ const allProjects = [
     link: "https://data.nasdaq.com/",
   },
   {
-    title: "Portfolio Rebalancing Tool",
+    title: "Portfolio Rebalancing Tool Placeholder",
     description:
       "High-performance Next.js tool with advanced data tables and visualization, helping 100+ financial advisors align multimillion-dollar portfolios.",
     tech: ["Next.js", "TypeScript", "GraphQL"],
     link: "https://addepar.com/wealth-management",
   },
   {
-    title: "Client Onboarding Platform",
+    title: "Client Onboarding Platform Placeholder",
     description:
       "Full UI overhaul of a high-traffic banking platform with bilingual support and WCAG 2.2 accessibility compliance, improving response times by 30%.",
     tech: ["React", "Next.js", "TypeScript", "SASS"],
     link: "https://www.scotiabank.com/",
   },
   {
-    title: "Facility Management Platform",
+    title: "Facility Management Platform Placeholder",
     description:
       "Cross-functional facility management system built in an Agile environment; led migration from a legacy ASP Classic project to Angular 8.",
     tech: ["Angular", ".NET", "TypeScript"],

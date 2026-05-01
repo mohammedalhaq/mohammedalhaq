@@ -119,7 +119,7 @@ function App() {
           >
             <ul className="text-left flex flex-col gap-2 text-white/75">
               <li>
-                Developed core features for <a href="https://aisle.sh/">aisle.sh</a>, a B2B SaaS enabling
+                Built core features for <a href="https://aisle.sh/">aisle.sh</a>, a B2B SaaS enabling
                 non-technical teams to build and deploy LLM-driven workflows. Contributed from research through
                 MVP across the full stack in React, Phoenix, and PostgreSQL
               </li>
